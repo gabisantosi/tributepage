@@ -39,19 +39,19 @@ a:link {
   }
   
   /* visited link */
-  a:visited {
-    color: #341A04;
-  }
+a:visited {
+  color: #341A04;
+}
   
   /* mouse over link */
-  a:hover {
+a:hover {
     color: rgba(52, 26, 4, 0.5);
-  }
+}
   
   /* selected link */
-  a:active {
+a:active {
     color: #DE9762;
-  }
+}
 
 #img-div {
     width: 100%;
@@ -74,9 +74,9 @@ a:link {
 
 /* User Story #8 */
 #image {  
-    width: 100%;
-    height: auto;
+    width: auto;
     max-width: 100%;
+    height: auto;
     border-radius: 300px;
     
 }    
@@ -122,12 +122,11 @@ h4{
 
 #about-article,
 #facts-article {
-    width: 50%;
+    width: 70%;
     margin: 100px auto 0px auto;
     background-color: #E09C8D;
     padding: 50px;
-    line-height: 1.5;
-  
+    line-height: 1.5em; 
 }
 
 ol {
@@ -138,52 +137,66 @@ footer {
     text-align: center;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 600px) {
+@media only screen and (min-width: 400px) and (max-width: 1200px) {
   #cont1 {
-    width: 0;
-}
-  #img-caption {
-    width: 50%;        
-}
-    
+    width: 20%;
+  }
+
   #cont2 {
-    width: 50%;
-    }
+    width: 40%;
+  }
+
+  #img-caption {
+    width: 40%;
+    padding-right: 10px;       
+  }
+
   #trib {
     visibility: hidden;
-}       
+  }    
+
   #about-article,
   #facts-article {
     width: 80%;
-    }
+  }
+
   #img-caption h1 {
     font-size: 16px;
-}
+  }
+
   #img-caption h3 {
     font-size: 12px;
-}
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    #cont1 {
-      width: 0px
-    }
-    
-    #img-caption {
-      width: 50%;        
-    }
-    
-    #cont2 {
-      width: 50%;
-    
-    }
-    #trib {
-      visibility: hidden;
-    }
-    #img-caption h1 {
-      font-size: 16px;
-        }
-    #img-caption h3 {
-      font-size: 12px;      
-    }
+  #cont1 {
+    width: 10%;  
+  }
+
+
+
+  #cont2 {
+   width: 60%;
+  } 
+
+  #img-caption {
+    width: 30%;       
+  }
+
+  #trib {
+    visibility: hidden;
+  }
+
+  #img-caption h1 {
+    font-size: 16px;
+  }
+
+  #img-caption h3 {
+    font-size: 12px;      
+  }
+  #about-article,
+  #facts-article {  
+    width: 90%;
+  }
 }
